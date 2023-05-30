@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ImageView
+        android:id="@+id/hp"
+        android:layout_width="264dp"
+        android:layout_height="205dp"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/mydaily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY DAILY ACTIVITY"
+        android:textSize="25dp"
+        android:textColor="#956827"
+        android:paddingTop="10dp"
+        android:layout_below="@id/hp"
+        android:fontFamily="@font/dosis_bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/versi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="v 1 . 0 . 0"
+        android:textSize="20dp"
+        android:textColor="#956827"
+        android:paddingTop="10dp"
+        android:layout_below="@id/mydaily"
+        android:fontFamily="@font/dosis_medium"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/thanks"
+        android:layout_width="215dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#956827"
+        android:fontFamily="@font/dosis_bold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="THANK YOU VERY MUCH"
+        android:textSize="30dp" />
+
+</RelativeLayout>

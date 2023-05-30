@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="46dp"
+            android:layout_height="52dp"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/glacial_bold"
+            android:layout_gravity="center"
+            android:text="@string/txt_add"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title"
+        android:hint="Title"
+        android:fontFamily="@font/glacial_regular"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/category"
+        android:hint="Category"
+        android:fontFamily="@font/glacial_regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/txtIsi"
+        android:hint="Notes"
+        android:fontFamily="@font/glacial_regular"
+        android:layout_marginTop="10dp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minHeight="200dp"
+        android:gravity="top"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdd"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIsi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="#3042A6"
+        android:fontFamily="@font/glacial_regular"
+        android:text="S A V E"
+        android:textColor="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDelete"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:fontFamily="@font/glacial_regular"
+        android:text="D E L E T E"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
